@@ -1,12 +1,31 @@
 import 'package:flutter/material.dart';
 
+// String getFullName(String firstName, String lastName) {
+//   return '$firstName $lastName';
+// }
+
+// String returnSomething(String something) =>
+//     '$something'; //this => sign shows that it is returning something from the function
+
 void main() {
+  // print(getFullName("Farhan", "Tahmid"));
+  // print(returnSomething("Returned from something"));
+  test();
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+void test() {
+  final name = "Foo";
+  if (name == "Foo") {
+    print("Yes this is foo");
+  } else {
+    print("This is not foo");
+  }
+}
 
+class MyApp extends StatelessWidget {
+  
+  const MyApp({super.key});
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
