@@ -23,13 +23,20 @@ void test() {
   //   print("This is not foo");
   // }
 
-  //****DART DATA TYPES*** */
+  //****DART LIST DATA TYPES*** */
 
-  var names = ['fiza', 'farhan'];
-  names.add('farnaz');
-  for (int i = 0; i < names.length; i++) {
-    print(names[i]);
-  }
+  // var names = ['fiza', 'farhan'];
+  // names.add('farnaz');
+  // for (int i = 0; i < names.length; i++) {
+  //   print(names[i]);
+  // }
+
+  //***DART SET DATA TYPE */
+  // var names = {'foo', 'bar', 'baz'};
+  // names.add('bar');
+  // print(names);
+  
+   
 }
 
 class MyApp extends StatelessWidget {
