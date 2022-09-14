@@ -15,16 +15,24 @@ void main() {
 }
 
 void test() {
-  final name = "Foo";
-  if (name == "Foo") {
-    print("Yes this is foo");
-  } else {
-    print("This is not foo");
+  //****DART CONTROL STATEMENT*** */
+  // final name = "Foo";
+  // if (name == "Foo") {
+  //   print("Yes this is foo");
+  // } else {
+  //   print("This is not foo");
+  // }
+
+  //****DART DATA TYPES*** */
+
+  var names = ['fiza', 'farhan'];
+  names.add('farnaz');
+  for (int i = 0; i < names.length; i++) {
+    print(names[i]);
   }
 }
 
 class MyApp extends StatelessWidget {
-  
   const MyApp({super.key});
   // This widget is the root of your application.
   @override
