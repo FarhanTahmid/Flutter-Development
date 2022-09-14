@@ -25,7 +25,7 @@ void test() {
 
   //****DART LIST DATA TYPES*** */
 
-  // var names = ['fiza', 'farhan'];
+  // var names = ['fiza', 'farhan','farnaz'];
   // names.add('farnaz');
   // for (int i = 0; i < names.length; i++) {
   //   print(names[i]);
@@ -37,10 +37,33 @@ void test() {
   // print(names);
 
   //***DART MAP/Dictionary */
-  var person = {'age': 20, 'name': 'farhan'};
-  print(person['name']);
-  person['name'] = 'fiza';
-  print(person);
+  // var person = {'age': 20, 'name': 'farhan'};
+  // print(person['name']);
+  // person['name'] = 'fiza';
+  // print(person);
+
+  /***DURT NULL SAFETY */
+  String? name =
+      null; //by using '?' you can tell dart that this is a nullable data type.
+  print(name);
+  name = 'farhan';
+  print(name);
+
+  List<String?>? names = [
+    'fiza',
+    'farhan',
+    null
+  ]; //this tells dart that the data inside the list can be null but also if the data type is string, that can be null too.
+  print(names);
+
+  const String? firstName = null;
+  const String? middleName=null;
+  const String? lastName = 'farnaz';
+
+  const firstNullValue = firstName ??
+      middleName ??
+      lastName; //this catches the first non null value and continues operation to the right
+  print(firstNullValue);
 }
 
 class MyApp extends StatelessWidget {
