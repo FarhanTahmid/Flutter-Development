@@ -35,8 +35,12 @@ void test() {
   // var names = {'foo', 'bar', 'baz'};
   // names.add('bar');
   // print(names);
-  
-   
+
+  //***DART MAP/Dictionary */
+  var person = {'age': 20, 'name': 'farhan'};
+  print(person['name']);
+  person['name'] = 'fiza';
+  print(person);
 }
 
 class MyApp extends StatelessWidget {
