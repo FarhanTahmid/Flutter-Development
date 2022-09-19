@@ -43,27 +43,49 @@ void test() {
   // print(person);
 
   /***DURT NULL SAFETY */
-  String? name =
-      null; //by using '?' you can tell dart that this is a nullable data type.
-  print(name);
-  name = 'farhan';
-  print(name);
+  // String? name =
+  //     null; //by using '?' you can tell dart that this is a nullable data type.
+  // print(name);
+  // name = 'farhan';
+  // print(name);
 
-  List<String?>? names = [
-    'fiza',
-    'farhan',
-    null
-  ]; //this tells dart that the data inside the list can be null but also if the data type is string, that can be null too.
-  print(names);
+  // List<String?>? names = [
+  //   'fiza',
+  //   'farhan',
+  //   null
+  // ]; //this tells dart that the data inside the list can be null but also if the data type is string, that can be null too.
+  // print(names);
 
-  const String? firstName = null;
-  const String? middleName=null;
-  const String? lastName = 'farnaz';
+  // const String? firstName = null;
+  // const String? middleName=null;
+  // const String? lastName = 'farnaz';
 
-  const firstNullValue = firstName ??
-      middleName ??
-      lastName; //this catches the first non null value and continues operation to the right
-  print(firstNullValue);
+  // const firstNullValue = firstName ??
+  //     middleName ??
+  //     lastName; //this catches the first non null value and continues operation to the right
+  // print(firstNullValue);
+
+  //oop concept
+  final person = Person("Farhan");
+  person.run();
+  person.breathe();
+}
+
+//DART OOP
+class Person {
+  String name='';
+  Person(String name) {
+    this.name = name;
+    
+  }
+
+  void breathe() {
+    print("${name} is breathing");
+  }
+
+  void run() {
+    print("${name} is running");
+  }
 }
 
 class MyApp extends StatelessWidget {
